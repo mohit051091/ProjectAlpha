@@ -10,7 +10,7 @@ from features.trade_inference import TradeInferenceEngine
 from features.feature_factory import FeatureFactory
 from labels import build_label_matrix, summarize_all_label_configs
 from utils.logger import setup_logger
-from utils.constants import PROCESSED_DIR, LABEL_HORIZONS, LABEL_THRESHOLDS
+from utils.constants import PROCESSED_DIR, DATA_DIR, LABEL_HORIZONS, LABEL_THRESHOLDS
 
 logger = setup_logger(__name__)
 con = duckdb.connect()
@@ -27,7 +27,7 @@ def stage_1(day_label: str):
     logger.info(f"STAGE 1: Cleaning raw files for {day_label}")
     logger.info("="*80)
     proc = Path(PROCESSED_DIR)
-    raw_dir = Path("Data") / "raw"
+    raw_dir = Path(DATA_DIR) / "raw"
 
     dom_out, tick_out = 0, 0
     for prefix, cleaner_method, out_prefix in [

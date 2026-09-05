@@ -5,7 +5,7 @@ Changes:
 2. Vectorized state machine using np.flatnonzero — 10-50x per call
 Output must match original _v1 exactly (validated via validate_output.py).
 """
-import sys, os, warnings
+import sys, os, warnings, argparse
 from pathlib import Path
 warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -208,8 +208,29 @@ def compute_summary(trades_df, label):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Double ROC(3) threshold sweep (v2). Defaults: all pairs, all dates.")
+    parser.add_argument("--pairs", type=str, default="",
+                        help="Comma-separated pair labels to run, e.g. L30_S25,L25_S25 (default: all)")
+    parser.add_argument("--dates", type=str, default="",
+                        help="Comma-separated dates to include, e.g. 11_Jun_26,12_Jun_26 (default: all dates in OOF)")
+    args = parser.parse_args()
+
+    pairs = THRESHOLD_PAIRS
+    if args.pairs.strip():
+        wanted = [p.strip().upper() for p in args.pairs.split(",") if p.strip()]
+        valid = [x[2] for x in THRESHOLD_PAIRS]
+        unknown = [p for p in wanted if p not in valid]
+        if unknown:
+            logger.error(f"Unknown pair labels: {unknown}. Valid: {valid}")
+            return
+        pairs = [p for p in THRESHOLD_PAIRS if p[2] in wanted]
+
+    date_filter = [d.strip() for d in args.dates.split(",") if d.strip()] if args.dates.strip() else []
+
     logger.info("=" * 70)
-    logger.info(f"SCRIPT 76 V2: DOUBLE ROC(3) STATE MACHINE — {len(THRESHOLD_PAIRS)} PAIRS | TARGET={TARGET_LABEL}")
+    logger.info(f"SCRIPT 76 V2: DOUBLE ROC(3) STATE MACHINE — {len(pairs)} PAIRS | TARGET={TARGET_LABEL}")
+    if date_filter:
+        logger.info(f"Date filter: {date_filter}")
     logger.info("=" * 70)
 
     if not OOF_PATH.exists():
@@ -217,6 +238,11 @@ def main():
         return
 
     df = pd.read_parquet(OOF_PATH)
+    if date_filter:
+        df = df[df["date"].isin(date_filter)].copy()
+        if len(df) == 0:
+            logger.error(f"No OOF rows match dates {date_filter}. Check date format, e.g. 11_Jun_26.")
+            return
     df["ts"] = pd.to_datetime(df["ts"])
     logger.info(f"Loaded {len(df):,} rows, {df['symbol'].nunique()} symbols, {df['date'].nunique()} dates")
 
@@ -249,9 +275,9 @@ def main():
     ]
 
     # SINGLE PASS: iterate groups once, compute all threshold pairs
-    pair_labels = [lbl for _, _, lbl in THRESHOLD_PAIRS]
+    pair_labels = [lbl for _, _, lbl in pairs]
     all_pair_rows = {lbl: [] for lbl in pair_labels}
-    pair_configs = {lbl: (tl, ts) for tl, ts, lbl in THRESHOLD_PAIRS}
+    pair_configs = {lbl: (tl, ts) for tl, ts, lbl in pairs}
 
     from collections import defaultdict
     pair_rows = defaultdict(list)
@@ -260,7 +286,7 @@ def main():
         grp = grp.sort_values("ts").reset_index(drop=True)
         day_met = compute_day_metrics(grp)
 
-        for theta_long, theta_short, label in THRESHOLD_PAIRS:
+        for theta_long, theta_short, label in pairs:
             long_row = run_direction_state_machine_vectorized(grp, theta_long, "LONG", day_met)
             short_row = run_direction_state_machine_vectorized(grp, theta_short, "SHORT", day_met)
 
