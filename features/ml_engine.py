@@ -161,6 +161,8 @@ class MLEngine:
                     theta_caught_time STRING,
                     mark1_time STRING,
                     between_time STRING,
+                    entry_time_ist STRING,
+                    theta_prob DOUBLE,
                     daily_open_passed BOOLEAN,
                     bypass_used BOOLEAN,
                     rejection_reason STRING,
@@ -197,10 +199,9 @@ class MLEngine:
                 self.machines_short.clear()
                 self._daily_open.clear()
 
-            if symbol not in self._daily_open:
-                tick_open = float(tick.get("open", 0.0) or 0.0)
-                if tick_open > 0.0:
-                    self._daily_open[symbol] = tick_open
+            # SANDBOX FIX: do NOT seed from tick "open" (prev-close-like). Seed from
+            # first bar open in _on_bar to match backtest day_met open.
+            pass
 
             bar = acc.add_tick(tick)
             if bar:
@@ -235,6 +236,11 @@ class MLEngine:
             bar["delta_1m"] = float(feat[1])
             roc_3 = comp.roc_3
             bar_close = bar["close"]
+            # SANDBOX FIX: seed daily open from first bar's open (match backtest)
+            if symbol not in self._daily_open:
+                bar_open = float(bar.get("open", 0.0) or 0.0)
+                if bar_open > 0.0:
+                    self._daily_open[symbol] = bar_open
 
             daily_open = self._get_daily_open(symbol, bar["ltp"])
 
@@ -353,13 +359,15 @@ class MLEngine:
                     prob_long, prob_short, prob_no_trade, prob,
                     roc_at_entry, delta_value_lakhs,
                     theta_caught_time, mark1_time, between_time,
+                    entry_time_ist, theta_prob,
                     daily_open_passed, bypass_used, rejection_reason, mode
-                ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                ) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
             """, (
                 now_utc.replace(tzinfo=None), sig.symbol, sig.direction, sig.entry_price,
                 sig.prob_long, sig.prob_short, sig.prob_no_trade, sig.prob,
                 sig.roc_at_entry, sig.delta_value_lakhs,
                 sig.theta_caught_time, sig.mark1_time, sig.between_time,
+                sig.entry_time_ist, sig.theta_prob,
                 sig.daily_open_passed, sig.bypass_used, rejection, self.mode,
             ))
             cur.close()

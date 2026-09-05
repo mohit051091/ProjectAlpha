@@ -33,15 +33,10 @@ def main():
         print(f"Loaded {len(watchlist_symbols)} symbols from manual watchlist.")
     else:
         print(f"Watchlist not found at {WATCHLIST_PATH}. Using all NSE EQ symbols from Dhan.")
-        
-    print(f"Loading watchlist from: {WATCHLIST_PATH}")
-    watchlist_df = pd.read_csv(WATCHLIST_PATH)
-    col = "Symbol" if "Symbol" in watchlist_df.columns else watchlist_df.columns[2] # Fallback to 3rd column
-    watchlist_symbols = set(watchlist_df[col].dropna().astype(str).str.strip().str.upper().tolist())
-    print(f"Loaded {len(watchlist_symbols)} symbols from manual watchlist.")
 
     # 2. Download Dhan scrip master online
     print(f"Downloading latest scrip master from: {SCRIP_MASTER_URL}")
+    CONFIG_DIR.mkdir(parents=True, exist_ok=True)
     temp_csv = CONFIG_DIR / "temp_scrip_master.csv"
     try:
         urllib.request.urlretrieve(SCRIP_MASTER_URL, temp_csv)

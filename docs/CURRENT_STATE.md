@@ -1,6 +1,18 @@
 # Current State
 
-**Date**: 2026-07-21
+**Date**: 2026-09-06
+
+## 2026-09-06 Refresh — Live/Backtest Parity Fix Bundle (committed, awaiting Railway redeploy)
+
+### What changed
+- **Root causes found** (Aug 31–Sep 04, L25_S25): backtest `roc_3` = 2-bar vs live 3-bar; daily-open source differs (3.8% match); large-trade median window 2k vs 10k; NaN vs 0.0 first bars; sweep missing 15:00 cutoff/exits; `ml_signals` missing theta-prob/entry-time; model files CRLF-broken by git autocrlf (fixed + `.gitattributes`); 67 of 72 source days have no backtest output (new `scripts/check_coverage.py` alarm).
+- **Sandbox proof** (`D:/PA_fix`): live-trade recall 17/34 → 25/34 (Aug 31 5/5, Sep 01 7/12, Sep 02 1/1, Sep 03 5/8, Sep 04 7/8).
+- **OOF**: 899,911 rows, 501 symbols, 5 dates (Aug 31–Sep 04).
+
+### Pending (not yet live)
+- Railway redeploy of the ML-scanner service from this repo (live-side fixes).
+- QuestDB `ALTER TABLE ml_signals ADD entry_time_ist STRING, theta_prob DOUBLE`.
+- Residuals: ±0.05 confidence wobble at 0.25, missing-symbol days, portfolio ±5/10% circuit unmodeled.
 
 ## 2026-07-21 Refresh — Jul 20-21 Added, 38 Dates Complete (Final Coverage)
 

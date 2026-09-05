@@ -1,0 +1,3 @@
+# Keep LightGBM model files LF-only: its parser chokes on CRLF.
+# (core.autocrlf=true rewrites them on checkout otherwise.)
+/models/*.txt text eol=lf

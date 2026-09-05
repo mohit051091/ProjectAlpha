@@ -130,21 +130,43 @@ def run_direction_state_machine_vectorized(df_sorted, theta, direction, day_met)
     triggered_idx = between_idx + 1 + int(after_between[0])
     row_out["max_stage"] = "TRIGGERED"
 
+    # SANDBOX FIX: live entry cutoff — no new entries at/after 15:00 IST
+    if ts_str[triggered_idx] >= "15:00:00":
+        row_out["max_stage"] = "TRIGGERED"
+        row_out.update({
+            "rejection_reason": "CUTOFF_REJECTED_15:00",
+            "entry_time_ist": ts_str[triggered_idx],
+            "entry_price": float(ltp[triggered_idx]),
+            "exit_price": None, "eod_pnl_pct": None, "mfe_pct": None, "mae_pct": None,
+            "roc_at_entry": float(roc[triggered_idx]) if not np.isnan(roc[triggered_idx]) else None,
+            "daily_open_passed": False, "bypass_used": False,
+            "mark1_ts": ts_str[mark1_idx], "between_ts": ts_str[between_idx],
+            "delta_value_lakhs_at_theta": float(delta[triggered_idx]) * float(ltp[triggered_idx]) / 100000.0,
+        })
+        return row_out
+
     # TRIGGERED: compute trade
     entry_price = ltp[triggered_idx]
-    exit_price = day_met["close"]
-    exit_idx = n - 1
+    # SANDBOX FIX: live flats everything at 15:00 (first bar at/after), not EOD close
+    flat_after = np.flatnonzero(ts_str[triggered_idx:] >= "15:00:00")
+    exit_idx = triggered_idx + int(flat_after[0]) if len(flat_after) > 0 else n - 1
+    exit_price = ltp[exit_idx]
+    window = ltp[triggered_idx:exit_idx + 1]
 
     if direction == "LONG":
-        eod_pnl = (exit_price - entry_price) / entry_price
-        future = ltp[triggered_idx:]
-        mfe = (np.max(future) - entry_price) / entry_price
-        mae = (np.min(future) - entry_price) / entry_price
+        raw_pnl = (exit_price - entry_price) / entry_price
+        mfe = (np.max(window) - entry_price) / entry_price
+        mae = (np.min(window) - entry_price) / entry_price
     else:
-        eod_pnl = (entry_price - exit_price) / entry_price
-        future = ltp[triggered_idx:]
-        mfe = (entry_price - np.min(future)) / entry_price
-        mae = (entry_price - np.max(future)) / entry_price
+        raw_pnl = (entry_price - exit_price) / entry_price
+        mfe = (entry_price - np.min(window)) / entry_price
+        mae = (entry_price - np.max(window)) / entry_price
+    # SANDBOX FIX: live books individual +10% take-profit
+    if mfe >= 0.10:
+        eod_pnl = 0.10
+        exit_price = entry_price * 1.10 if direction == "LONG" else entry_price * 0.90
+    else:
+        eod_pnl = raw_pnl
 
     roc_at_entry = float(roc[triggered_idx]) if not np.isnan(roc[triggered_idx]) else None
     delta_val = delta[triggered_idx] * entry_price / 100000.0

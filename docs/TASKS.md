@@ -143,4 +143,6 @@
 | Non-EOD auto-research label-family curation | 2026-07-04 | Excluded EOD label family and enabled curated label-family execution/ranking (`30m_1pct`, `60m_1pct`, `60m_3pct`, `120m_3pct`) with target-aware scripts |
 | Live Scanner Self-Healing Watchdog & 9 AM Login Fix | 2026-07-11 | Implemented individual symbol-level watchdog in collector.py and skipped morning login in server.py if token is fresh (under 4 hours old) to prevent HTTP 429 rate limit disconnects |
 | EQ Series Only Filtering & Online Dhan Scrip Master Update | 2026-07-11 | Filtered out BE Trade-to-Trade series from both live scanner and batch pipeline, and implemented daily online master scrip downloads |
+| Live-vs-backtest parity root-cause + fix bundle | 2026-09-06 | Found roc_3 2-bar vs 3-bar split + 8 more gaps on Aug 31–Sep 04; fixed in code, verified in sandbox (recall 17/34 → 25/34), committed + pushed |
+| Railway redeploy (parity bundle) + QuestDB ml_signals ALTER | 2026-09-06 | Pending deploy: entry_time_ist STRING, theta_prob DOUBLE; live-side fixes take effect only after redeploy |
 

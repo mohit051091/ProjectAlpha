@@ -21,7 +21,7 @@ class Signal:
                  mark1_time: str, between_time: str,
                  daily_open_passed: bool, bypass_used: bool,
                  prob_long: float = 0.0, prob_short: float = 0.0,
-                 prob_no_trade: float = 0.0):
+                 prob_no_trade: float = 0.0, theta_prob: float = 0.0):
         self.symbol = symbol
         self.direction = direction
         self.entry_price = entry_price
@@ -30,6 +30,7 @@ class Signal:
         self.prob_long = prob_long
         self.prob_short = prob_short
         self.prob_no_trade = prob_no_trade
+        self.theta_prob = theta_prob  # SANDBOX FIX: prob at ARMING bar (threshold answer)
         self.roc_at_entry = roc_at_entry
         self.delta_value_lakhs = delta_value_lakhs
         self.theta_caught_time = theta_caught_time
@@ -50,6 +51,7 @@ class DoubleROCStateMachine:
     def reset(self):
         self.state = "IDLE"
         self.theta_caught_ts: Optional[str] = None
+        self.theta_prob: Optional[float] = None  # SANDBOX FIX
         self.mark1_ts: Optional[str] = None
         self.between_ts: Optional[str] = None
         self.roc_crossed = False
@@ -85,6 +87,7 @@ class DoubleROCStateMachine:
             if not np.isnan(prob) and prob >= theta:
                 self.state = "ARMING"
                 self.theta_caught_ts = ts_str
+                self.theta_prob = float(prob)  # SANDBOX FIX
 
         elif self.state == "ARMING":
             if not np.isnan(roc_3):
@@ -132,6 +135,7 @@ class DoubleROCStateMachine:
                         between_time=self.between_ts or "",
                         daily_open_passed=daily_open_passed,
                         bypass_used=bypass_used,
+                        theta_prob=self.theta_prob if self.theta_prob is not None else 0.0,
                     )
 
         return None

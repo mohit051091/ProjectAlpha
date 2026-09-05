@@ -24,7 +24,8 @@ class BarAccumulator:
 
     def __init__(self):
         # Persistent state across resets
-        self._recent_trade_qtys = deque(maxlen=2000)
+        # SANDBOX FIX: match batch feature_factory_v2 window (was 2000)
+        self._recent_trade_qtys = deque(maxlen=10000)
         self._large_threshold = float('inf')
         self._prev_dom = {}
         self._prev_ltp = 0.0

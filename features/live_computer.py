@@ -135,6 +135,8 @@ class LiveFeatureComputer:
         prev_ltp = self.ltp_avg_6.get(-2)
         prev_prev_ltp = self.ltp_avg_6.get(-3)
         price_acceleration = bar["ltp"] - 2 * prev_ltp + prev_prev_ltp
+        if np.isnan(price_acceleration):
+            price_acceleration = 0.0  # SANDBOX FIX: match batch .fillna(0.0)
 
         # Iceberg score — return 0.0 when displayed = 0 (matches batch _compute_iceberg_score)
         displayed = 0.0

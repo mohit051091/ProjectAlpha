@@ -67,6 +67,10 @@ def convert_day(day: int, month: int, year: int, force: bool = False) -> dict:
     """Convert one unified tick file to per-symbol DOM+TICK files."""
     con = duckdb.connect()
     con.execute("SET TIME ZONE 'UTC'")
+    Path("D:/tmp_duckdb").mkdir(parents=True, exist_ok=True)
+    con.execute("SET temp_directory='D:/tmp_duckdb'")
+    con.execute("SET memory_limit='6GB'")
+    con.execute("SET preserve_insertion_order=false")
 
     src_pattern = str(DATA_DIR / f"ticks_year={year}_month={month:02d}_day={day:02d}_ticks.parquet")
     src_files = list(DATA_DIR.glob(f"ticks_year={year}_month={month:02d}_day={day:02d}_ticks.parquet"))

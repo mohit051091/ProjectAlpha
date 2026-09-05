@@ -17,7 +17,7 @@ import lightgbm as lgb
 PROJECT = Path(__file__).parent.parent
 TARGET_LABEL = "label_60m_1pct"
 OOF_PATH = PROJECT / "results" / f"oof_predictions_lgbm_{TARGET_LABEL}.parquet"
-MODEL_PATH = PROJECT / "models" / "lgbm_model_60m_1pct_final.txt"
+MODEL_PATH = Path(r"C:\ProjectAlpha\models\lgbm_model_60m_1pct_final.txt")  # SANDBOX: shared read-only weights
 PROCESSED_DIR = Path(os.environ.get("PROJECTALPHA_PROCESSED", str(PROJECT / "02_processed")))
 
 FEATURES = [
@@ -37,14 +37,16 @@ def log(msg):
 
 
 def compute_roc_3(closes):
-    roc = np.full(len(closes), np.nan)
-    if len(closes) > 2:
-        prev = closes[:-2]
-        curr = closes[2:]
+    # SANDBOX FIX (align with live live_computer.py): 3-bar return, 0.0 for first 3 bars.
+    # Original backtest used a 2-bar window with NaN for the first 2 bars.
+    roc = np.zeros(len(closes))
+    if len(closes) > 3:
+        prev = closes[:-3]
+        curr = closes[3:]
         mask = prev > 0
-        roc_vals = np.full(len(curr), np.nan)
+        roc_vals = np.zeros(len(curr))
         roc_vals[mask] = (curr[mask] - prev[mask]) / prev[mask] * 100.0
-        roc[2:] = roc_vals
+        roc[3:] = roc_vals
     return roc
 
 
