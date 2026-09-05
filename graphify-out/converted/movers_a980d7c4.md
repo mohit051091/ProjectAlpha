@@ -1,0 +1,331 @@
+<!-- converted from movers.xlsx -->
+
+## Sheet: Sheet1
+| date | symbol | direction |
+| --- | --- | --- |
+| 2026-06-05 00:00:00 | GODIGIT | Short |
+| 2026-05-25 00:00:00 | JWL | Long |
+| 2026-05-27 00:00:00 | APARINDS | Long |
+| 2026-05-27 00:00:00 | JINDALSAW | Long |
+| 2026-05-27 00:00:00 | FINCABLES | Long |
+| 2026-05-29 00:00:00 | CEMPRO | Long |
+| 2026-05-26 00:00:00 | ATGL | Long |
+| 2026-05-26 00:00:00 | CAMPUS | Long |
+| 2026-06-01 00:00:00 | JPPOWER | Short |
+| 2026-05-27 00:00:00 | ATGL | Long |
+| 2026-05-29 00:00:00 | ELGIEQUIP | Long till 0949 and Short from 0952 onwards |
+| 2026-05-27 00:00:00 | ENRIN | Long |
+| 2026-05-27 00:00:00 | HFCL | Long |
+| 2026-06-08 00:00:00 | CANHLIFE | Long |
+| 2026-05-29 00:00:00 | GUJGASLTD | Long |
+| 2026-06-05 00:00:00 | HSCL | Long |
+| 2026-05-25 00:00:00 | BLUEJET | Long |
+| 2026-06-04 00:00:00 | RHIM | Long |
+| 2026-05-29 00:00:00 | NATCOPHARM | Short |
+| 2026-05-29 00:00:00 | ATGL | Short |
+| 2026-05-29 00:00:00 | JYOTICNC | Short |
+| 2026-06-01 00:00:00 | FINCABLES | Short |
+| 2026-05-29 00:00:00 | AFCONS | Long |
+| 2026-06-03 00:00:00 | WOCKPHARMA | Long |
+| 2026-06-03 00:00:00 | RHIM | Long |
+| 2026-06-04 00:00:00 | NAM-INDIA | Long |
+| 2026-05-26 00:00:00 | BLUEJET | Long |
+| 2026-05-27 00:00:00 | AIIL | Long |
+| 2026-05-29 00:00:00 | THERMAX | Long |
+| 2026-05-29 00:00:00 | NUVOCO | Long |
+| 2026-06-01 00:00:00 | REDINGTON | Long |
+| 2026-05-25 00:00:00 | ARE&M | Long |
+| 2026-05-25 00:00:00 | TITAGARH | Long |
+| 2026-06-08 00:00:00 | PWL | Long |
+| 2026-06-01 00:00:00 | RHIM | Short |
+| 2026-05-27 00:00:00 | GESHIP | Short |
+| 2026-05-29 00:00:00 | BEML | Short |
+| 2026-05-27 00:00:00 | POLYMED | Short |
+| 2026-06-01 00:00:00 | ATGL | Short |
+| 2026-06-01 00:00:00 | TRITURBINE | Short |
+| 2026-06-01 00:00:00 | PWL | Short |
+| 2026-06-02 00:00:00 | WOCKPHARMA | Short |
+| 2026-06-08 00:00:00 | GMDCLTD | Short |
+| 2026-06-10 00:00:00 | IFCI | Short |
+| 2026-05-27 00:00:00 | FIRSTCRY | Short |
+| 2026-05-29 00:00:00 | COROMANDEL | Short |
+| 2026-05-29 00:00:00 | LEMONTREE | Short |
+| 2026-06-01 00:00:00 | WOCKPHARMA | Short |
+| 2026-06-10 00:00:00 | GESHIP | Short |
+| 2026-05-29 00:00:00 | EIHOTEL | Short |
+| 2026-06-03 00:00:00 | ATHERENERG | Long |
+| 2026-06-05 00:00:00 | TTML | Long |
+| 2026-05-29 00:00:00 | JSL | Short |
+| 2026-05-29 00:00:00 | GESHIP | Short |
+| 2026-06-08 00:00:00 | IFCI | Short |
+| 2026-06-10 00:00:00 | WELCORP | Short |
+| 2026-05-29 00:00:00 | GMDCLTD | Short |
+| 2026-05-29 00:00:00 | JUBLINGREA | Short |
+| 2026-06-01 00:00:00 | EMMVEE | Short |
+| 2026-06-04 00:00:00 | MEESHO | Short |
+| 2026-06-05 00:00:00 | TEJASNET | Short |
+| 2026-06-02 00:00:00 | RHIM | Short |
+| 2026-06-03 00:00:00 | LTTS | Short |
+| 2026-06-04 00:00:00 | ANANTRAJ | Long |
+| 2026-05-29 00:00:00 | CLEAN | Long |
+| 2026-05-25 00:00:00 | EMMVEE | Long |
+| 2026-06-04 00:00:00 | TEJASNET | Long |
+| 2026-06-04 00:00:00 | VIJAYA | Long |
+| 2026-05-29 00:00:00 | WOCKPHARMA | Long |
+| 2026-05-29 00:00:00 | AJANTPHARM | Short |
+| 2026-05-29 00:00:00 | JPPOWER | Short |
+| 2026-05-29 00:00:00 | TRITURBINE | Long till 0928 andshort from 0936 onwards |
+| 2026-06-08 00:00:00 | CCL | Long |
+| 2026-05-27 00:00:00 | ZEEL | Long |
+| 2026-06-03 00:00:00 | KPRMILL | Long |
+| 2026-06-02 00:00:00 | SONATSOFTW | Long |
+| 2026-06-08 00:00:00 | INOXINDIA | Long |
+| 2026-05-29 00:00:00 | RHIM | Short |
+| 2026-06-10 00:00:00 | JINDALSAW | Short |
+| 2026-06-01 00:00:00 | GVT&D | Short |
+| 2026-06-01 00:00:00 | NSLNISP | Long till 0955 and short from 144 onwards |
+| 2026-06-04 00:00:00 | MMTC | Long |
+| 2026-05-29 00:00:00 | HFCL | Long |
+| 2026-06-10 00:00:00 | INOXINDIA | Long |
+| 2026-05-29 00:00:00 | NETWEB | Long |
+| 2026-06-04 00:00:00 | ZENTEC | Long |
+| 2026-06-04 00:00:00 | CEMPRO | Long |
+| 2026-06-03 00:00:00 | IFCI | Long |
+| 2026-06-04 00:00:00 | ZEEL | Long |
+| 2026-06-09 00:00:00 | DATAPATTNS | Long |
+| 2026-06-09 00:00:00 | JAINREC | Long |
+| 2026-06-08 00:00:00 | HSCL | Short till 0951 and long from 1009 onwards |
+| 2026-06-02 00:00:00 | CONCORDBIO | Long |
+| 2026-06-02 00:00:00 | ACMESOLAR | Long |
+| 2026-06-03 00:00:00 | OLAELEC | Long |
+| 2026-05-29 00:00:00 | BERGEPAINT | Short |
+| 2026-05-29 00:00:00 | TEGA | Long |
+| 2026-06-02 00:00:00 | NEWGEN | Long |
+| 2026-06-02 00:00:00 | JMFINANCIL | Long |
+| 2026-06-10 00:00:00 | CARTRADE | Long |
+| 2026-05-29 00:00:00 | AARTIIND | Short |
+| 2026-06-01 00:00:00 | TENNIND | Short |
+| 2026-06-03 00:00:00 | PWL | Short |
+| 2026-06-02 00:00:00 | ALKYLAMINE | Long |
+| 2026-06-04 00:00:00 | KWIL | Long |
+| 2026-06-09 00:00:00 | SCHNEIDER | Short |
+| 2026-05-27 00:00:00 | JPPOWER | Long |
+| 2026-06-04 00:00:00 | PWL | Long |
+| 2026-05-27 00:00:00 | TECHNOE | Short |
+| 2026-06-03 00:00:00 | ECLERX | Short |
+| 2026-06-01 00:00:00 | JKTYRE | Short |
+| 2026-05-26 00:00:00 | PINELABS | Short |
+| 10_Jun_26 | ABSLAMC | LONG |
+| 04_Jun_26 | ACMESOLAR | LONG |
+| 03_Jun_26 | ACUTAAS | LONG |
+| 03_Jun_26 | ADANIENSOL | SHORT |
+| 08_Jun_26 | ADANIENSOL | LONG |
+| 10_Jun_26 | AEGISLOG | LONG |
+| 11_Jun_26 | AEGISLOG | LONG |
+| 12_Jun_26 | AEGISLOG | LONG |
+| 10_Jun_26 | AFCONS | SHORT |
+| 11_Jun_26 | AMBER | SHORT |
+| 03_Jun_26 | ANANDRATHI | SHORT |
+| 04_Jun_26 | ANANTRAJ | LONG |
+| 03_Jun_26 | ANGELONE | SHORT |
+| 08_Jun_26 | ANTHEM | LONG |
+| 03_Jun_26 | APARINDS | LONG till 928 and then short till EOD |
+| 10_Jun_26 | APARINDS | LONG |
+| 11_Jun_26 | APARINDS | LONG |
+| 08_Jun_26 | ASTERDM | LONG |
+| 10_Jun_26 | ASTERDM | LONG |
+| 03_Jun_26 | ATGL | SHORT |
+| 11_Jun_26 | ATGL | SHORT |
+| 03_Jun_26 | ATHERENERG | LONG |
+| 04_Jun_26 | ATHERENERG | SHORT |
+| 10_Jun_26 | ATHERENERG | LONG |
+| 11_Jun_26 | BALKRISIND | SHORT |
+| 12_Jun_26 | BANDHANBNK | LONG |
+| 09_Jun_26 | BELRISE | LONG |
+| 10_Jun_26 | BHEL | SHORT |
+| 04_Jun_26 | BLUEJET | LONG |
+| 11_Jun_26 | BLUEJET | LONG |
+| 12_Jun_26 | BLUEJET | LONG |
+| 04_Jun_26 | BLUESTARCO | LONG |
+| 03_Jun_26 | BSOFT | SHORT |
+| 09_Jun_26 | CAPLIPOINT | LONG |
+| 10_Jun_26 | CAPLIPOINT | LONG |
+| 03_Jun_26 | CARTRADE | LONG |
+| 09_Jun_26 | CARTRADE | LONG |
+| 10_Jun_26 | CARTRADE | LONG |
+| 11_Jun_26 | CARTRADE | LONG from 11 to 1146 and then short |
+| 08_Jun_26 | CCL | LONG |
+| 10_Jun_26 | CCL | LONG |
+| 04_Jun_26 | CEMPRO | LONG |
+| 09_Jun_26 | CEMPRO | LONG |
+| 04_Jun_26 | CGPOWER | LONG |
+| 10_Jun_26 | CHAMBLFERT | LONG |
+| 03_Jun_26 | CHENNPETRO | LONG |
+| 11_Jun_26 | CHENNPETRO | SHORT |
+| 12_Jun_26 | CHOLAFIN | LONG |
+| 12_Jun_26 | CHOLAHLDNG | LONG |
+| 03_Jun_26 | COFORGE | SHORT |
+| 10_Jun_26 | COROMANDEL | LONG |
+| 03_Jun_26 | CPPLUS | LONG |
+| 04_Jun_26 | CPPLUS | LONG |
+| 09_Jun_26 | CUB | LONG |
+| 04_Jun_26 | DATAPATTNS | LONG |
+| 09_Jun_26 | DATAPATTNS | LONG |
+| 10_Jun_26 | DATAPATTNS | SHORT |
+| 11_Jun_26 | DATAPATTNS | SHORT |
+| 12_Jun_26 | DATAPATTNS | LONG |
+| 09_Jun_26 | DEEPAKFERT | LONG |
+| 12_Jun_26 | DEEPAKFERT | LONG |
+| 03_Jun_26 | ECLERX | SHORT |
+| 12_Jun_26 | ECLERX | LONG |
+| 03_Jun_26 | EMMVEE | LONG |
+| 04_Jun_26 | ENGINERSIN | LONG |
+| 12_Jun_26 | ENGINERSIN | LONG |
+| 12_Jun_26 | ENRIN | LONG |
+| 11_Jun_26 | FINCABLES | LONG |
+| 04_Jun_26 | FORCEMOT | LONG |
+| 08_Jun_26 | FORTIS | LONG |
+| 09_Jun_26 | GABRIEL | LONG |
+| 11_Jun_26 | GLAND | LONG |
+| 10_Jun_26 | GLENMARK | SHORT |
+| 04_Jun_26 | GMRAIRPORT | LONG |
+| 12_Jun_26 | GODFRYPHLP | LONG |
+| 12_Jun_26 | GODREJIND | LONG |
+| 10_Jun_26 | GRAPHITE | SHORT |
+| 03_Jun_26 | HCLTECH | SHORT |
+| 12_Jun_26 | HEXT | SHORT |
+| 03_Jun_26 | HFCL | LONG |
+| 04_Jun_26 | HFCL | SHORT |
+| 11_Jun_26 | HFCL | SHORT |
+| 12_Jun_26 | HOMEFIRST | LONG |
+| 03_Jun_26 | HSCL | SHORT |
+| 04_Jun_26 | HSCL | LONG |
+| 09_Jun_26 | HSCL | LONG |
+| 10_Jun_26 | HSCL | LONG |
+| 09_Jun_26 | IDEA | SHORT |
+| 12_Jun_26 | IDEA | LONG |
+| 03_Jun_26 | IFCI | LONG |
+| 04_Jun_26 | IFCI | LONG |
+| 10_Jun_26 | IFCI | SHORT |
+| 12_Jun_26 | IFCI | LONG |
+| 03_Jun_26 | IIFL | LONG |
+| 04_Jun_26 | IIFL | LONG |
+| 04_Jun_26 | INOXWIND | LONG |
+| 10_Jun_26 | INOXWIND | SHORT |
+| 12_Jun_26 | INOXWIND | LONG |
+| 10_Jun_26 | INTELLECT | LONG |
+| 04_Jun_26 | IPCALAB | LONG |
+| 09_Jun_26 | IRB | SHORT |
+| 03_Jun_26 | J&KBANK | LONG |
+| 09_Jun_26 | J&KBANK | LONG |
+| 09_Jun_26 | JAINREC | LONG |
+| 10_Jun_26 | JAINREC | SHORT |
+| 11_Jun_26 | JAINREC | SHORT |
+| 12_Jun_26 | JBMA | LONG |
+| 03_Jun_26 | JINDALSAW | LONG |
+| 04_Jun_26 | JINDALSAW | LONG |
+| 10_Jun_26 | JINDALSAW | SHORT |
+| 12_Jun_26 | JINDALSAW | LONG |
+| 12_Jun_26 | JMFINANCIL | LONG |
+| 09_Jun_26 | JSWINFRA | LONG |
+| 09_Jun_26 | JYOTICNC | LONG |
+| 12_Jun_26 | JYOTICNC | LONG |
+| 04_Jun_26 | KALYANKJIL | LONG |
+| 10_Jun_26 | KALYANKJIL | SHORT |
+| 04_Jun_26 | KIRLOSENG | LONG |
+| 12_Jun_26 | KIRLOSENG | LONG |
+| 12_Jun_26 | LATENTVIEW | LONG |
+| 12_Jun_26 | LICHSGFIN | LONG |
+| 12_Jun_26 | LLOYDSME | LONG |
+| 12_Jun_26 | LTF | LONG |
+| 03_Jun_26 | LTM | SHORT |
+| 03_Jun_26 | LTTS | SHORT |
+| 09_Jun_26 | LTTS | LONG |
+| 03_Jun_26 | MANAPPURAM | SHORT |
+| 04_Jun_26 | MEESHO | SHORT |
+| 03_Jun_26 | MRPL | LONG |
+| 09_Jun_26 | MRPL | LONG |
+| 10_Jun_26 | MRPL | LONG |
+| 11_Jun_26 | MRPL | SHORT |
+| 04_Jun_26 | NAM-INDIA | LONG |
+| 03_Jun_26 | NATCOPHARM | SHORT |
+| 04_Jun_26 | NATIONALUM | SHORT |
+| 03_Jun_26 | NETWEB | SHORT |
+| 04_Jun_26 | NETWEB | LONG |
+| 11_Jun_26 | NETWEB | SHORT |
+| 12_Jun_26 | NETWEB | LONG |
+| 04_Jun_26 | NEWGEN | SHORT |
+| 09_Jun_26 | NLCINDIA | SHORT |
+| 10_Jun_26 | NLCINDIA | SHORT |
+| 10_Jun_26 | NSLNISP | SHORT |
+| 12_Jun_26 | NUVAMA | LONG |
+| 10_Jun_26 | OIL | SHORT |
+| 03_Jun_26 | OLAELEC | LONG |
+| 04_Jun_26 | OLAELEC | SHORT |
+| 09_Jun_26 | OLAELEC | LONG |
+| 11_Jun_26 | OLAELEC | SHORT |
+| 11_Jun_26 | OLAELEC | LONG |
+| 03_Jun_26 | OLECTRA | LONG |
+| 04_Jun_26 | ONESOURCE | LONG |
+| 03_Jun_26 | PATANJALI | SHORT |
+| 10_Jun_26 | PAYTM | SHORT |
+| 11_Jun_26 | PAYTM | SHORT |
+| 03_Jun_26 | PERSISTENT | SHORT |
+| 04_Jun_26 | PGEL | LONG |
+| 12_Jun_26 | PGEL | LONG |
+| 09_Jun_26 | PIIND | LONG |
+| 09_Jun_26 | PINELABS | LONG |
+| 11_Jun_26 | PINELABS | SHORT |
+| 03_Jun_26 | POLICYBZR | SHORT |
+| 11_Jun_26 | POLYMED | LONG |
+| 12_Jun_26 | POONAWALLA | LONG |
+| 10_Jun_26 | POWERINDIA | SHORT |
+| 12_Jun_26 | PRESTIGE | LONG |
+| 03_Jun_26 | PWL | SHORT |
+| 04_Jun_26 | PWL | LONG |
+| 12_Jun_26 | RAILTEL | LONG |
+| 09_Jun_26 | REDINGTON | LONG |
+| 10_Jun_26 | REDINGTON | SHORT |
+| 10_Jun_26 | RPOWER | SHORT |
+| 03_Jun_26 | RRKABEL | LONG |
+| 04_Jun_26 | RRKABEL | LONG |
+| 04_Jun_26 | SAMMAANCAP | LONG |
+| 10_Jun_26 | SAMMAANCAP | SHORT |
+| 03_Jun_26 | SAREGAMA | LONG |
+| 11_Jun_26 | SAREGAMA | LONG |
+| 04_Jun_26 | SCHNEIDER | SHORT |
+| 05_Jun_26 | SCHNEIDER | LONG |
+| 09_Jun_26 | SCHNEIDER | SHORT |
+| 11_Jun_26 | SCI | SHORT |
+| 11_Jun_26 | SCI | LONG |
+| 11_Jun_26 | SYRMA | LONG |
+| 11_Jun_26 | SYRMA | SHORT |
+| 09_Jun_26 | TATACAP | LONG |
+| 10_Jun_26 | TATACHEM | SHORT |
+| 11_Jun_26 | TATACHEM | LONG |
+| 04_Jun_26 | TATACOMM | LONG |
+| 12_Jun_26 | TATAINVEST | LONG |
+| 03_Jun_26 | TATATECH | SHORT |
+| 03_Jun_26 | TCS | SHORT |
+| 03_Jun_26 | TECHM | SHORT |
+| 03_Jun_26 | TEJASNET | LONG |
+| 03_Jun_26 | TEJASNET | SHORT |
+| 04_Jun_26 | TEJASNET | LONG till 1316 and then short till 1316 |
+| 10_Jun_26 | TEJASNET | LONG |
+| 11_Jun_26 | TEJASNET | LONG |
+| 04_Jun_26 | THERMAX | LONG |
+| 12_Jun_26 | TIINDIA | LONG |
+| 12_Jun_26 | TMCV | LONG |
+| 10_Jun_26 | URBANCO | SHORT |
+| 04_Jun_26 | VOLTAS | LONG |
+| 11_Jun_26 | VTL | LONG |
+| 09_Jun_26 | WELCORP | LONG |
+| 10_Jun_26 | WELCORP | SHORT |
+| 03_Jun_26 | WOCKPHARMA | LONG |
+| 04_Jun_26 | WOCKPHARMA | SHORT |
+| 11_Jun_26 | WOCKPHARMA | LONG |
+| 04_Jun_26 | ZEEL | LONG |
+| 10_Jun_26 | ZEEL | SHORT |
+| 11_Jun_26 | ZEEL | LONG |
+| 04_Jun_26 | ZENTEC | LONG |
+| 12_Jun_26 | ZENTEC | LONG |

@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-07-05T02:55:10.227495Z",
+  "recommended_target_label": "label_30m_1pct",
+  "recommended_target_alias": "early_momentum_30m_1pct",
+  "recommended_pair_label": "L25_S30",
+  "long_th": 0.25,
+  "short_th": 0.3,
+  "mover_threshold_pct": 4.0,
+  "eval_start_date": "2026-06-03",
+  "eval_end_date": "2026-07-03",
+  "score": 0.6139972655710548,
+  "mover_precision": 0.8690476190476191,
+  "mover_recall": 0.1310592459605027,
+  "mover_f1": 0.22776911076443057,
+  "classification_accuracy": 0.8938679245283019,
+  "non_mover_specificity": 0.9973216459702946,
+  "win_rate": 0.5174418604651163,
+  "cumulative_return": 1.0352137578813727,
+  "sweep_workbook": "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\results\\performance_sweeps_label_30m_1pct.xlsx"
+}

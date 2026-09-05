@@ -1,0 +1,59 @@
+{
+  "objective": {
+    "mover_threshold_pct": 4.0,
+    "min_trades_per_day": 8,
+    "max_trades_per_day": 25,
+    "eval_start_date": "2026-06-03",
+    "eval_end_date": "2026-07-03",
+    "target_label_candidates": [
+      {
+        "target_label": "label_60m_1pct",
+        "alias": "balanced_60m_1pct"
+      },
+      {
+        "target_label": "label_30m_1pct",
+        "alias": "early_momentum_30m_1pct"
+      },
+      {
+        "target_label": "label_60m_3pct",
+        "alias": "conviction_60m_3pct"
+      },
+      {
+        "target_label": "label_120m_3pct",
+        "alias": "trend_follow_120m_3pct"
+      }
+    ],
+    "false_positive_rate_multiplier": 0.30,
+    "tpd_penalty_cap": 0.20,
+    "score_weights": {
+      "mover_recall": 0.24,
+      "mover_precision": 0.18,
+      "non_mover_specificity": 0.12,
+      "mover_hit_rate": 0.08,
+      "win_rate": 0.08,
+      "directional_precision": 0.05,
+      "cum_return_component": 0.20,
+      "mean_mfe_component": 0.05
+    }
+  },
+  "inputs": {
+    "sweep_excel_relative": "results/performance_sweeps.xlsx",
+    "sweep_excel_template": "results/performance_sweeps_{target_label}.xlsx",
+    "oof_source_relative": "results/oof_source_full_2026_07_03.parquet"
+  },
+  "execution": {
+    "commands": [
+      "python scripts/80_train_final_models.py",
+      "python scripts/99_refresh_oof_predictions.py",
+      "python scripts/76_generate_v2_sweeps.py"
+    ]
+  },
+  "proposal_engine": {
+    "step_size": 0.02,
+    "max_candidates": 6,
+    "long_min": 0.2,
+    "long_max": 0.4,
+    "short_min": 0.2,
+    "short_max": 0.35
+  }
+}

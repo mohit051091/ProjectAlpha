@@ -1,0 +1,10 @@
+Data/
+02_processed/
+__pycache__/
+*.parquet
+*.log
+*.tmp
+*.xlsx
+*.csv
+.system_generated/
+spool/

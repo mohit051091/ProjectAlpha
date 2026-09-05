@@ -1,0 +1,5 @@
+{
+  "target_label": "label_30m_1pct",
+  "target_alias": "early_momentum_30m_1pct",
+  "expected_sweep_path": "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\results\\performance_sweeps_label_30m_1pct.xlsx"
+}

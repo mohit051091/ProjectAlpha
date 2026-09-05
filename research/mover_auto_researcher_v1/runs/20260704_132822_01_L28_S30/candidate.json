@@ -1,0 +1,6 @@
+{
+  "label": "L28_S30",
+  "long_th": 0.28,
+  "short_th": 0.3,
+  "hypothesis": "Test LONG=0.28, SHORT=0.30 for better mover capture while keeping trade frequency in target band."
+}

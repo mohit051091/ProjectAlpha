@@ -1,0 +1,5 @@
+{
+  "target_label": "label_60m_1pct",
+  "target_alias": "balanced_60m_1pct",
+  "expected_sweep_path": "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha_sandbox_autoresearch\\results\\performance_sweeps.xlsx"
+}

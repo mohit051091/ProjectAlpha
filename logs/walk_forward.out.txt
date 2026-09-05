@@ -1,0 +1,151 @@
+[10:17:07] ================================================================================
+[10:17:07] WALK-FORWARD VALIDATION & LIGHTGBM UPGRADE EXPERIMENT (Target: label_60m_1pct)
+[10:17:07] Started: 2026-06-30T10:17:07.739084
+[10:17:07] ================================================================================
+[10:17:07] Discovering unique day dates...
+[10:17:07] Found 21 chronological days: ['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26', '19_Jun_26', '22_Jun_26', '23_Jun_26', '24_Jun_26', '25_Jun_26']
+[10:17:07] Opening DuckDB connection (lazy parquet scan, no RAM load)...
+[10:17:32] DuckDB view created: 2,977,332 rows across all symbols/dates
+[10:17:32] Validation dates (16 folds): ['03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26', '19_Jun_26', '22_Jun_26', '23_Jun_26', '24_Jun_26', '25_Jun_26']
+[10:17:32] 
+--- Running Fold 1/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26'] -> Val=03_Jun_26 ---
+[10:18:15]   Train set: 595289 rows | Purged validation overlap.
+[10:18:15]   Val set  : 119755 rows
+[10:19:15]   Validation MCC results: LR=0.0625 | RF=0.0724 | LightGBM=0.0267
+[10:19:31]   Backtest (RF, no filter): Trades=943, Cum P&L=137.70%
+[10:19:31]   Backtest (RF, open filter): Trades=727, Cum P&L=105.87%
+[10:19:31]   Backtest (LGB, no filter): Trades=13, Cum P&L=-15.93%
+[10:19:31]   Backtest (LGB, open filter): Trades=10, Cum P&L=-14.08%
+[10:19:31]   Backtest (LGB, vwap filter): Trades=10, Cum P&L=-14.08%
+[10:19:31] 
+--- Running Fold 2/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26'] -> Val=04_Jun_26 ---
+[10:20:45]   Train set: 715044 rows | Purged validation overlap.
+[10:20:45]   Val set  : 156902 rows
+[10:21:53]   Validation MCC results: LR=0.0804 | RF=0.0905 | LightGBM=0.0228
+[10:22:05]   Backtest (RF, no filter): Trades=704, Cum P&L=-0.29%
+[10:22:05]   Backtest (RF, open filter): Trades=571, Cum P&L=39.19%
+[10:22:05]   Backtest (LGB, no filter): Trades=8, Cum P&L=-5.65%
+[10:22:05]   Backtest (LGB, open filter): Trades=5, Cum P&L=1.60%
+[10:22:05]   Backtest (LGB, vwap filter): Trades=8, Cum P&L=-5.99%
+[10:22:05] 
+--- Running Fold 3/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26'] -> Val=05_Jun_26 ---
+[10:23:25]   Train set: 871946 rows | Purged validation overlap.
+[10:23:25]   Val set  : 2232 rows
+[10:24:27]   Validation MCC results: LR=-0.0049 | RF=-0.0538 | LightGBM=-0.0507
+[10:24:27]   Backtest (RF, no filter): Trades=6, Cum P&L=-2.44%
+[10:24:27]   Backtest (RF, open filter): Trades=3, Cum P&L=-5.27%
+[10:24:27]   Backtest (LGB, no filter): Trades=0, Cum P&L=0.00%
+[10:24:27]   Backtest (LGB, open filter): Trades=0, Cum P&L=0.00%
+[10:24:27]   Backtest (LGB, vwap filter): Trades=0, Cum P&L=0.00%
+[10:24:27] 
+--- Running Fold 4/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26'] -> Val=08_Jun_26 ---
+[10:25:59]   Train set: 874178 rows | Purged validation overlap.
+[10:25:59]   Val set  : 11757 rows
+[10:27:11]   Validation MCC results: LR=0.0772 | RF=0.0062 | LightGBM=0.0000
+[10:27:15]   Backtest (RF, no filter): Trades=667, Cum P&L=-22.85%
+[10:27:15]   Backtest (RF, open filter): Trades=362, Cum P&L=85.77%
+[10:27:15]   Backtest (LGB, no filter): Trades=6, Cum P&L=3.21%
+[10:27:15]   Backtest (LGB, open filter): Trades=5, Cum P&L=2.91%
+[10:27:15]   Backtest (LGB, vwap filter): Trades=5, Cum P&L=2.91%
+[10:27:15] 
+--- Running Fold 5/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26'] -> Val=09_Jun_26 ---
+[10:29:09]   Train set: 885935 rows | Purged validation overlap.
+[10:29:09]   Val set  : 164956 rows
+[10:30:40]   Validation MCC results: LR=0.0625 | RF=0.0787 | LightGBM=0.0151
+[10:31:01]   Backtest (RF, no filter): Trades=844, Cum P&L=254.90%
+[10:31:01]   Backtest (RF, open filter): Trades=586, Cum P&L=381.10%
+[10:31:01]   Backtest (LGB, no filter): Trades=6, Cum P&L=8.75%
+[10:31:02]   Backtest (LGB, open filter): Trades=5, Cum P&L=6.85%
+[10:31:02]   Backtest (LGB, vwap filter): Trades=6, Cum P&L=8.86%
+[10:31:02] 
+--- Running Fold 6/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26'] -> Val=10_Jun_26 ---
+[10:33:19]   Train set: 1050891 rows | Purged validation overlap.
+[10:33:19]   Val set  : 164891 rows
+[10:34:58]   Validation MCC results: LR=0.0518 | RF=0.0634 | LightGBM=0.0191
+[10:35:17]   Backtest (RF, no filter): Trades=753, Cum P&L=232.86%
+[10:35:17]   Backtest (RF, open filter): Trades=599, Cum P&L=212.56%
+[10:35:17]   Backtest (LGB, no filter): Trades=5, Cum P&L=4.48%
+[10:35:17]   Backtest (LGB, open filter): Trades=5, Cum P&L=3.69%
+[10:35:17]   Backtest (LGB, vwap filter): Trades=5, Cum P&L=4.14%
+[10:35:17] 
+--- Running Fold 7/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26'] -> Val=11_Jun_26 ---
+[10:37:44]   Train set: 1215782 rows | Purged validation overlap.
+[10:37:44]   Val set  : 160232 rows
+[10:39:16]   Validation MCC results: LR=0.0582 | RF=0.0675 | LightGBM=0.0218
+[10:39:28]   Backtest (RF, no filter): Trades=803, Cum P&L=-6.59%
+[10:39:28]   Backtest (RF, open filter): Trades=597, Cum P&L=-23.16%
+[10:39:28]   Backtest (LGB, no filter): Trades=20, Cum P&L=4.00%
+[10:39:28]   Backtest (LGB, open filter): Trades=13, Cum P&L=33.45%
+[10:39:28]   Backtest (LGB, vwap filter): Trades=15, Cum P&L=18.54%
+[10:39:28] 
+--- Running Fold 8/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26'] -> Val=12_Jun_26 ---
+[10:41:55]   Train set: 1376014 rows | Purged validation overlap.
+[10:41:55]   Val set  : 164728 rows
+[10:43:32]   Validation MCC results: LR=0.0297 | RF=0.0333 | LightGBM=0.0123
+[10:43:43]   Backtest (RF, no filter): Trades=1752, Cum P&L=1392.92%
+[10:43:43]   Backtest (RF, open filter): Trades=1433, Cum P&L=1278.67%
+[10:43:43]   Backtest (LGB, no filter): Trades=14, Cum P&L=15.16%
+[10:43:43]   Backtest (LGB, open filter): Trades=14, Cum P&L=14.68%
+[10:43:43]   Backtest (LGB, vwap filter): Trades=14, Cum P&L=14.19%
+[10:43:43] 
+--- Running Fold 9/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26'] -> Val=15_Jun_26 ---
+[10:45:52]   Train set: 1540742 rows | Purged validation overlap.
+[10:45:52]   Val set  : 186707 rows
+[10:47:33]   Validation MCC results: LR=0.0740 | RF=0.0924 | LightGBM=0.0062
+[10:47:47]   Backtest (RF, no filter): Trades=2580, Cum P&L=-115.78%
+[10:47:47]   Backtest (RF, open filter): Trades=1802, Cum P&L=-106.52%
+[10:47:47]   Backtest (LGB, no filter): Trades=6, Cum P&L=4.09%
+[10:47:47]   Backtest (LGB, open filter): Trades=5, Cum P&L=1.41%
+[10:47:47]   Backtest (LGB, vwap filter): Trades=6, Cum P&L=3.10%
+[10:47:47] 
+--- Running Fold 10/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26'] -> Val=16_Jun_26 ---
+[10:50:11]   Train set: 1727449 rows | Purged validation overlap.
+[10:50:11]   Val set  : 187636 rows
+[10:52:06]   Validation MCC results: LR=0.0830 | RF=0.0958 | LightGBM=0.0000
+[10:52:19]   Backtest (RF, no filter): Trades=1674, Cum P&L=264.04%
+[10:52:19]   Backtest (RF, open filter): Trades=1304, Cum P&L=81.08%
+[10:52:19]   Backtest (LGB, no filter): Trades=0, Cum P&L=0.00%
+[10:52:19]   Backtest (LGB, open filter): Trades=0, Cum P&L=0.00%
+[10:52:19]   Backtest (LGB, vwap filter): Trades=0, Cum P&L=0.00%
+[10:52:19] 
+--- Running Fold 11/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26'] -> Val=18_Jun_26 ---
+[10:55:44]   Train set: 1915085 rows | Purged validation overlap.
+[10:55:44]   Val set  : 121553 rows
+[10:58:06]   Validation MCC results: LR=0.0665 | RF=0.0847 | LightGBM=0.0000
+[10:58:16]   Backtest (RF, no filter): Trades=885, Cum P&L=289.95%
+[10:58:16]   Backtest (RF, open filter): Trades=666, Cum P&L=391.05%
+[10:58:16]   Backtest (LGB, no filter): Trades=0, Cum P&L=0.00%
+[10:58:16]   Backtest (LGB, open filter): Trades=0, Cum P&L=0.00%
+[10:58:16]   Backtest (LGB, vwap filter): Trades=0, Cum P&L=0.00%
+[10:58:16] 
+--- Running Fold 12/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26'] -> Val=19_Jun_26 ---
+[11:01:38]   Train set: 2036638 rows | Purged validation overlap.
+[11:01:38]   Val set  : 187978 rows
+[11:04:27]   Validation MCC results: LR=0.0655 | RF=0.0829 | LightGBM=0.0000
+[11:04:42]   Backtest (RF, no filter): Trades=2245, Cum P&L=442.75%
+[11:04:42]   Backtest (RF, open filter): Trades=1865, Cum P&L=549.00%
+[11:04:42]   Backtest (LGB, no filter): Trades=0, Cum P&L=0.00%
+[11:04:42]   Backtest (LGB, open filter): Trades=0, Cum P&L=0.00%
+[11:04:42]   Backtest (LGB, vwap filter): Trades=0, Cum P&L=0.00%
+[11:04:42] 
+--- Running Fold 13/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26', '19_Jun_26'] -> Val=22_Jun_26 ---
+[23:00:13]   Train set: 2224616 rows | Purged validation overlap.
+[23:00:13]   Val set  : 188000 rows
+[23:09:42]   Validation MCC results: LR=0.0615 | RF=0.0899 | LightGBM=-0.0005
+[23:10:27]   Backtest (RF, no filter): Trades=1669, Cum P&L=-5.47%
+[23:10:27]   Backtest (RF, open filter): Trades=1236, Cum P&L=-64.47%
+[23:10:27]   Backtest (LGB, no filter): Trades=1, Cum P&L=0.86%
+[23:10:27]   Backtest (LGB, open filter): Trades=1, Cum P&L=0.86%
+[23:10:27]   Backtest (LGB, vwap filter): Trades=1, Cum P&L=0.86%
+[23:10:27] 
+--- Running Fold 14/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26', '19_Jun_26', '22_Jun_26'] -> Val=23_Jun_26 ---
+[23:19:51]   Train set: 2412616 rows | Purged validation overlap.
+[23:19:51]   Val set  : 188414 rows
+[23:27:52]   Validation MCC results: LR=0.0496 | RF=0.0701 | LightGBM=-0.0006
+[23:28:48]   Backtest (RF, no filter): Trades=1388, Cum P&L=-120.08%
+[23:28:48]   Backtest (RF, open filter): Trades=1080, Cum P&L=-222.30%
+[23:28:48]   Backtest (LGB, no filter): Trades=0, Cum P&L=0.00%
+[23:28:48]   Backtest (LGB, open filter): Trades=0, Cum P&L=0.00%
+[23:28:48]   Backtest (LGB, vwap filter): Trades=0, Cum P&L=0.00%
+[23:28:48] 
+--- Running Fold 15/16: Train=['26_May_26', '27_May_26', '29_May_26', '01_Jun_26', '02_Jun_26', '03_Jun_26', '04_Jun_26', '05_Jun_26', '08_Jun_26', '09_Jun_26', '10_Jun_26', '11_Jun_26', '12_Jun_26', '15_Jun_26', '16_Jun_26', '18_Jun_26', '19_Jun_26', '22_Jun_26', '23_Jun_26'] -> Val=24_Jun_26 ---

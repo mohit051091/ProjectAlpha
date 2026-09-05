@@ -1,0 +1,1 @@
+"""Statistical research module"""

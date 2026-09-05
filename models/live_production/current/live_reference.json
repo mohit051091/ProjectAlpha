@@ -1,0 +1,14 @@
+{
+  "channel": "live_production",
+  "reference_type": "last_known_live_snapshot",
+  "captured_on": "2026-07-04",
+  "notes": "This is a reference snapshot for deployment coordination, not an automated sync from Railway.",
+  "active_target_label_family": "label_60m_1pct",
+  "active_model_file": "lgbm_model_60m_1pct_final.txt",
+  "active_model_json": "lgbm_model_60m_1pct_final.json",
+  "thresholds": {
+    "long_th": 0.25,
+    "short_th": 0.25
+  },
+  "source_context": "Railway variable snapshot observed during Jul-04 production checks."
+}

@@ -1,0 +1,897 @@
+{
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\alignment.py": {
+    "mtime": 1781217051.7832344,
+    "ast_hash": "e2e9a23bc3fe81763c392472d1aa1fa3",
+    "semantic_hash": "e2e9a23bc3fe81763c392472d1aa1fa3"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\feature_factory.py": {
+    "mtime": 1784143336.1428201,
+    "ast_hash": "6010c66ed5fb0bc02f8015288acfab32",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\tick_features.py": {
+    "mtime": 1781174450.2772274,
+    "ast_hash": "c25caebc596d525b95a0a5d4ef3a1904",
+    "semantic_hash": "c25caebc596d525b95a0a5d4ef3a1904"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\trade_inference.py": {
+    "mtime": 1781718179.8107016,
+    "ast_hash": "c7f2255546377a550f7e709576ff1a72",
+    "semantic_hash": "c7f2255546377a550f7e709576ff1a72"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\__init__.py": {
+    "mtime": 1780769694.888742,
+    "ast_hash": "9a6dcb2e4851997888d5f9e7b63e8603",
+    "semantic_hash": "9a6dcb2e4851997888d5f9e7b63e8603"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\labels\\label_generator.py": {
+    "mtime": 1781430130.232525,
+    "ast_hash": "dd4659d14ae255f6c121aadbebc9d8fa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\labels\\__init__.py": {
+    "mtime": 1780777337.3105354,
+    "ast_hash": "4a63c69cacf7965d49ef31a0990f42c3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\__init__.py": {
+    "mtime": 1780766468.198661,
+    "ast_hash": "79659b544d54da6b047d759ecf95ad9f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\raw\\data_cleaner.py": {
+    "mtime": 1784038587.534187,
+    "ast_hash": "c02910ce10bf8e551b5d011540ab8d6c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\raw\\data_loader.py": {
+    "mtime": 1784958046.4362552,
+    "ast_hash": "3a985a39c21c94a3b143aee14219d0b3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\raw\\__init__.py": {
+    "mtime": 1780766468.0570796,
+    "ast_hash": "9b53baefcad5f60284d8500165c2e47c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\__init__.py": {
+    "mtime": 1780766468.1641026,
+    "ast_hash": "a6888aac65de7b6d4179344f538cc6b4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\05_split_day_level.py": {
+    "mtime": 1781340891.5269618,
+    "ast_hash": "5413ced2e0bf91015beeced85e839ca2",
+    "semantic_hash": "5413ced2e0bf91015beeced85e839ca2"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\10_prepare_data.py": {
+    "mtime": 1784957990.280948,
+    "ast_hash": "c19a226c1c2aaceda62084e7a89d17fe",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\20_infer_trades.py": {
+    "mtime": 1781216638.7610774,
+    "ast_hash": "8b099b13b0f0821c36c5e146a2c13b2d",
+    "semantic_hash": "8b099b13b0f0821c36c5e146a2c13b2d"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\30_compute_features.py": {
+    "mtime": 1781216847.3336146,
+    "ast_hash": "07465cf0fe9c0d36da73e33be0e4e0df",
+    "semantic_hash": "07465cf0fe9c0d36da73e33be0e4e0df"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\40_generate_labels.py": {
+    "mtime": 1781430071.4012716,
+    "ast_hash": "c5505a6535fbc917bb1e8bb3fa1cc36b",
+    "semantic_hash": "c5505a6535fbc917bb1e8bb3fa1cc36b"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\50_backtest_signals.py": {
+    "mtime": 1780778417.7314014,
+    "ast_hash": "aa2b5867059ca4ffe5386ee22182307e",
+    "semantic_hash": "aa2b5867059ca4ffe5386ee22182307e"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\50_baseline_model.py": {
+    "mtime": 1781438634.9114983,
+    "ast_hash": "14339bbf3048218612278c414d7ebdc4",
+    "semantic_hash": "14339bbf3048218612278c414d7ebdc4"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_alignment.py": {
+    "mtime": 1780773160.2399368,
+    "ast_hash": "abc4f0aeceec6ad0afc2bd50a15b0d1e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_feature_factory.py": {
+    "mtime": 1781211735.7886074,
+    "ast_hash": "b3cd4e2bbfcb4705574f0f072cd9b270",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_split_day_level.py": {
+    "mtime": 1780837582.1931355,
+    "ast_hash": "a20ddfa8cfe831c377cf040185d49961",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_trade_inference.py": {
+    "mtime": 1780769635.6894293,
+    "ast_hash": "045a76a05aba574c7b3298c9417db6ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\__init__.py": {
+    "mtime": 1780766468.198661,
+    "ast_hash": "de209c3c8077910246db295c0ad18fc7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\utils\\config.py": {
+    "mtime": 1780766416.7206068,
+    "ast_hash": "09fe16a49cf58656894e4a48ca246103",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\utils\\constants.py": {
+    "mtime": 1784957863.8190038,
+    "ast_hash": "1cdcae1fb679347f42efc33ad3818e92",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\utils\\logger.py": {
+    "mtime": 1780766430.2599335,
+    "ast_hash": "4ab9544b40eb3e95bb07ead5eaf31624",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\utils\\__init__.py": {
+    "mtime": 1780766460.235417,
+    "ast_hash": "5d919eeec5378462d6cc13f11be22f1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\AGENTS.md": {
+    "mtime": 1784672230.580149,
+    "ast_hash": "86b06bfffeaa65f79d6efc0fa702b687",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\GEMINI.md": {
+    "mtime": 1780820928.9778013,
+    "ast_hash": "959a354c9b0c30fb9c264ce143ccc72a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\CURRENT_STATE.md": {
+    "mtime": 1784672238.1288695,
+    "ast_hash": "0467a00d04ef61b59370b9b49239b001",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\DECISION_LOG.md": {
+    "mtime": 1784833438.3473685,
+    "ast_hash": "08f3fc3a61765e6a8cc714acde8643e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\PROJECT_TIMELINE.md": {
+    "mtime": 1783783277.845991,
+    "ast_hash": "f38c8fa2a311505005e01c01efc8af07",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\TASKS.md": {
+    "mtime": 1783783287.661371,
+    "ast_hash": "661b80d0f6bdae7c70031a2db35339e0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\Consultants Review\\EXPERT_REVIEW_Sonnet_4.6.md": {
+    "mtime": 1781121841.4453063,
+    "ast_hash": "6ab528e414f8fa880294ccd307b1271d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\Consultants Review\\Consultant_Review_Sonnet_Chat_4.6.pdf": {
+    "mtime": 1781122095.8609347,
+    "ast_hash": "da8a7a9ec1a0927faf4bce5ad6aa5e2f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\Consultants Review\\HFT_Project_Consulting_Review_GPT.pdf": {
+    "mtime": 1781121667.5612528,
+    "ast_hash": "2ead93b1187df9f85f106fe58f83fc77",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\Consultants Review\\PreMove_Detection_Review_Gemini.pdf": {
+    "mtime": 1781122274.5270505,
+    "ast_hash": "a393aba745f87eca886c0f0bb3af6c1c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\Consultants Review\\MASTER_REVIEW_AND_EXECUTION_PLAN.md": {
+    "mtime": 1781124234.049898,
+    "ast_hash": "336d149f76e505fe123c63941edd69a8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\ARCHITECTURE.md": {
+    "mtime": 1781124561.2845905,
+    "ast_hash": "327604edf7183227d8ed57a56c523e98",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\PROJECT_PLAYBOOK.md": {
+    "mtime": 1781124559.247215,
+    "ast_hash": "d59bf924d42df0f425a52612c22c47c6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\REJECTED_APPROACHES.md": {
+    "mtime": 1781377424.3235252,
+    "ast_hash": "e5e5eae273cbd0d6424e7e893f78eb56",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\run_pipeline.py": {
+    "mtime": 1785357346.6891165,
+    "ast_hash": "7a35222810151f5cc93462d874b48c9c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\01_explore_data.py": {
+    "mtime": 1780765850.199884,
+    "ast_hash": "0a942a1f0ebba6d75399b20fe8fce4c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\02_comprehensive_exploration.py": {
+    "mtime": 1780765930.8609958,
+    "ast_hash": "d5913e26b74f1a116fdad44f79f92645",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\03_phase1_summary.py": {
+    "mtime": 1780766050.7595842,
+    "ast_hash": "ab84e5f9081c19f7cef21fbe73a4218b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\check_file_format.py": {
+    "mtime": 1780765894.9095068,
+    "ast_hash": "c5019fbbf53e9dcd2a7349b7b7a3a14a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\check_parquet.py": {
+    "mtime": 1780765905.872995,
+    "ast_hash": "695857973447f5cbbd51cb3dd735a439",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\PHASE_2_SYSTEM_DESIGN.py": {
+    "mtime": 1780766376.710516,
+    "ast_hash": "1fdff18e0b2060884702fffb094c6d28",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\60_alert_trigger_backtest.py": {
+    "mtime": 1781438635.4600506,
+    "ast_hash": "28f33f94e34f6f529be9e292e24ef27f",
+    "semantic_hash": "28f33f94e34f6f529be9e292e24ef27f"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\analyze_movers.py": {
+    "mtime": 1781438637.7038503,
+    "ast_hash": "d03b5b314659f9294db0d028e4acb8cf",
+    "semantic_hash": "d03b5b314659f9294db0d028e4acb8cf"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\export_predictions_csv.py": {
+    "mtime": 1781438638.834555,
+    "ast_hash": "625cf6b34a7a58f148675daa0e1723f8",
+    "semantic_hash": "625cf6b34a7a58f148675daa0e1723f8"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\audit_target_stocks.py": {
+    "mtime": 1781438638.294849,
+    "ast_hash": "df1d3c7125a9d8b3be2ed48c496a58dc",
+    "semantic_hash": "df1d3c7125a9d8b3be2ed48c496a58dc"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\70_walk_forward_validation.py": {
+    "mtime": 1782794501.3965783,
+    "ast_hash": "5665b6fc25053c3a7127aa64b94a4ce1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_walk_forward.py": {
+    "mtime": 1781430090.4504364,
+    "ast_hash": "4c46f2cc3fc3bf70a052f0ad875e1647",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\75_tune_lightgbm_threshold.py": {
+    "mtime": 1781560602.9269466,
+    "ast_hash": "1e5f54223512a731c356963b6e46e2a7",
+    "semantic_hash": "1e5f54223512a731c356963b6e46e2a7"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\DEPLOYMENTS.md": {
+    "mtime": 1781288324.988834,
+    "ast_hash": "ffa8e1d4f746921b9c78d220ab5f95d8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\INCIDENTS.md": {
+    "mtime": 1781288322.7564306,
+    "ast_hash": "76c5eaab1243bb762b515cacd81dcd1e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\PERFORMANCE_LOG.md": {
+    "mtime": 1781377417.864389,
+    "ast_hash": "3d3159d69a052563503f95f04e1784d6",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\movers_a980d7c4.md": {
+    "mtime": 1783768463.4172208,
+    "ast_hash": "b2c4fe169973fe5af942621c8458ea05",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_60m_1pct_final.json": {
+    "mtime": 1783216155.344237,
+    "ast_hash": "36647a5aee5e71750f5b0acace2f3b44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\80_train_final_models.py": {
+    "mtime": 1783172872.3514307,
+    "ast_hash": "0a244342959cf7cc1cc8487aee2fa042",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_60m_1pct_final.txt": {
+    "mtime": 1783216153.8103273,
+    "ast_hash": "1be3551ca314f1c8f15667265cca2e22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\debug_omitted_symbols.py": {
+    "mtime": 1781430083.2375443,
+    "ast_hash": "3e220f292416bd7297a9def024da95fe",
+    "semantic_hash": "3e220f292416bd7297a9def024da95fe"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\export_best_scenarios_trades.py": {
+    "mtime": 1781430084.5544767,
+    "ast_hash": "8f03a1ca789978d62e4ea90fe250bab9",
+    "semantic_hash": "8f03a1ca789978d62e4ea90fe250bab9"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\export_symbol_minute_details.py": {
+    "mtime": 1781438639.4324367,
+    "ast_hash": "9f3be6ccda47104736591fc5d04aadf7",
+    "semantic_hash": "9f3be6ccda47104736591fc5d04aadf7"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_final.json": {
+    "mtime": 1781368432.0112796,
+    "ast_hash": "7406bda7838d119081efa77ce2f53444",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_fold_7.json": {
+    "mtime": 1781368388.6686943,
+    "ast_hash": "38acf9b7f3a98d2f0d8cfba2495f58e2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_final.txt": {
+    "mtime": 1781368428.9425547,
+    "ast_hash": "3451d6207c7b673f235544a65c069c98",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_fold_7.txt": {
+    "mtime": 1781368386.6479309,
+    "ast_hash": "12376751eaa0c8753315e206b738b943",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\performance_sweeps_b4ec370b.md": {
+    "mtime": 1783768639.8381228,
+    "ast_hash": "2b267821804c5791ce317730ba777d58",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\HANDOVER_STRATEGY_REPORT.md": {
+    "mtime": 1782848761.2618499,
+    "ast_hash": "63913c51e21a1459363f2827b252afa3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\OrderFlow_Strategy_Brief_v2_old_version.pdf": {
+    "mtime": 1780764158.1148157,
+    "ast_hash": "85d6aca17b8fa3c6fac35aab622a8c36",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\06_convert_unified_ticks.py": {
+    "mtime": 1784957918.6336453,
+    "ast_hash": "d0a682a2fb89ad9484c120c7ed78e0c0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\76_generate_v2_sweeps.py": {
+    "mtime": 1784930382.6067057,
+    "ast_hash": "27c26eaddf5f4ed01c08ec44667d094f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\77_generate_unified_predictions.py": {
+    "mtime": 1784957956.9747791,
+    "ast_hash": "a14bf4a1e58fa19cf8adb88e8e8bfd37",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\78_extend_oof.py": {
+    "mtime": 1781719771.434424,
+    "ast_hash": "6d97b3d525f3c69c84b4ef6112350413",
+    "semantic_hash": "6d97b3d525f3c69c84b4ef6112350413"
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\process_25.py": {
+    "mtime": 1782396405.7239902,
+    "ast_hash": "94ec3962d93807868d6be6df6d82b3ce",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_check_sweep.py": {
+    "mtime": 1782416313.9111688,
+    "ast_hash": "d110093bde5e5707a3683a4ab35aafa7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_debug_all_features.py": {
+    "mtime": 1782399133.7710338,
+    "ast_hash": "b8c1592fb3f588a3f3ac1acd129ed342",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_debug_feature.py": {
+    "mtime": 1782398470.369798,
+    "ast_hash": "692b63ac54ddcac3ffa469fd5f26568a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_debug_first_feature.py": {
+    "mtime": 1782399119.0673568,
+    "ast_hash": "141ece5bd321d7e55f81566f55566c88",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_debug_labels.py": {
+    "mtime": 1782399090.0017872,
+    "ast_hash": "26c41facf2d04cc4ffc7a56f90f5e018",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\_debug_query.py": {
+    "mtime": 1782398418.5676198,
+    "ast_hash": "e0acf96e00878ed2e7c9ce1701b2812d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\bar_accumulator.py": {
+    "mtime": 1783158389.5994976,
+    "ast_hash": "d1d1d20f7a9f01b42232a03f10ff8dfa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\live_computer.py": {
+    "mtime": 1783161356.1289499,
+    "ast_hash": "29a8f1f3518462dae6c3841a50d5da89",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\ml_engine.py": {
+    "mtime": 1783538285.8304238,
+    "ast_hash": "3fc310eb3767c647da95b95de81547a9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\state_machine.py": {
+    "mtime": 1782674160.2282796,
+    "ast_hash": "e5402a711d24423455957f1634319ac7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\analyze_errors.py": {
+    "mtime": 1783026742.8269882,
+    "ast_hash": "6cbd008f7fccd9d8de1893c2a9e8be53",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\debug2.py": {
+    "mtime": 1783026516.4712377,
+    "ast_hash": "fc11f6c77195be173185c0ed38716459",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\debug_replay.py": {
+    "mtime": 1783026497.317508,
+    "ast_hash": "c55eb069feb9746af4f5d2d7cac43d3a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\final_compare.py": {
+    "mtime": 1783026820.29734,
+    "ast_hash": "6af7fdeb572c4d9d73e419d4bef06c10",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\replay_compare.py": {
+    "mtime": 1783026488.8248117,
+    "ast_hash": "58ff6d634a425db16607e35dd0fc8b1b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\79_extend_oof_25.py": {
+    "mtime": 1782415540.602795,
+    "ast_hash": "87ffee2f2c438afeba566e32249a365d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\99_refresh_oof_predictions.py": {
+    "mtime": 1783172890.9253585,
+    "ast_hash": "c23fb94b001d122e97bf47c366684520",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\process_day.py": {
+    "mtime": 1782399186.029855,
+    "ast_hash": "6d9269cff012c12624205596951d5153",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\tests\\test_live_scanner.py": {
+    "mtime": 1783783143.3752754,
+    "ast_hash": "3d3b7f913f51866d222c364f77cb3404",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\LIVE_ARCHITECTURE.md": {
+    "mtime": 1782649370.978712,
+    "ast_hash": "75575ff6641c790a4183703e8c672cb1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\logs\\walk_forward.err.txt": {
+    "mtime": 1782794820.583165,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\logs\\walk_forward.out.txt": {
+    "mtime": 1782842328.5148816,
+    "ast_hash": "4b95388316a47cd1726e8db13a3e7102",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\performance_sweeps_old_72e6e2c0.md": {
+    "mtime": 1783158698.975428,
+    "ast_hash": "f64ffaabbf7f81f30811c57710932284",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\performance_sweeps_v2_b59bd4c6.md": {
+    "mtime": 1783158773.6657982,
+    "ast_hash": "059e7c112abd87f7fe29f41fac7d2ec0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\symbol_counts_per_day_796f2afc.md": {
+    "mtime": 1783158774.8746772,
+    "ast_hash": "f4fcb62804289204b789d42ad0d9952e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\test_write_e92a3450.md": {
+    "mtime": 1783158774.9142377,
+    "ast_hash": "ce0d2d8be084f769e05f70ae57cda950",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\v2_performance_sweeps - Copy_029d0cdb.md": {
+    "mtime": 1783158790.138852,
+    "ast_hash": "1e4df9a50bc515e62abcf155f048f6dc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\graphify-out\\converted\\v2_performance_sweeps_5183e48d.md": {
+    "mtime": 1783158808.6428387,
+    "ast_hash": "25e24ddaf781506921d2d205247f6a33",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\docs\\PIPELINE_AND_STRATEGY_GUIDE.pdf": {
+    "mtime": 1781470309.3698652,
+    "ast_hash": "48f7290ced0bdf4ecf102b5140816d2e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_120m_3pct_final.json": {
+    "mtime": 1783219082.5644646,
+    "ast_hash": "77511d756b676e81262a03396252cd8b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_30m_1pct_final.json": {
+    "mtime": 1783217080.8976624,
+    "ast_hash": "75ca0aa8026a234bfbab74bb1bb9ad52",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_60m_3pct_final.json": {
+    "mtime": 1783217999.565592,
+    "ast_hash": "98a1975091ff4bb4fa5017776f9587e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_120m_3pct_final.json": {
+    "mtime": 1783219082.5644646,
+    "ast_hash": "77511d756b676e81262a03396252cd8b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_30m_1pct_final.json": {
+    "mtime": 1783217080.8976624,
+    "ast_hash": "75ca0aa8026a234bfbab74bb1bb9ad52",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_60m_1pct_final.json": {
+    "mtime": 1783216155.344237,
+    "ast_hash": "36647a5aee5e71750f5b0acace2f3b44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_60m_3pct_final.json": {
+    "mtime": 1783217999.565592,
+    "ast_hash": "98a1975091ff4bb4fa5017776f9587e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\release_manifest.json": {
+    "mtime": 1783265074.3830624,
+    "ast_hash": "6493361743279a9c60e9b312a7f1ed89",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\live_production\\current\\lgbm_model_60m_1pct_final.json": {
+    "mtime": 1783216155.344237,
+    "ast_hash": "36647a5aee5e71750f5b0acace2f3b44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\live_production\\current\\live_reference.json": {
+    "mtime": 1783265006.7847712,
+    "ast_hash": "c94d5dc23524db7cf00089cc6e384af4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\external\\karpathy-autoresearch\\prepare.py": {
+    "mtime": 1783165981.846655,
+    "ast_hash": "9197ae3210f510ee57c505f70077ef12",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\external\\karpathy-autoresearch\\train.py": {
+    "mtime": 1783165981.855229,
+    "ast_hash": "26b69df83540bd45d4519a43385d714d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\auto_research_loop.py": {
+    "mtime": 1783172977.5124166,
+    "ast_hash": "fa71ea6fbfbcf8fb614b796a2084ad03",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\config.json": {
+    "mtime": 1783215827.3660948,
+    "ast_hash": "1212a288a494eb7772420a7bd888a41e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\proposals\\auto_generated_candidates.json": {
+    "mtime": 1783220110.220127,
+    "ast_hash": "a3db21f8ad6cc1b407eb6cec1b028bcd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\reports\\latest_result_snapshot.json": {
+    "mtime": 1783220110.227495,
+    "ast_hash": "0fa0a69dd5f329be20f9dcac1c43685d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\reports\\live_recommended_settings.json": {
+    "mtime": 1783220110.227495,
+    "ast_hash": "85968cdf30daa8adf0b7ab49efec09ac",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_132822_01_L28_S30\\candidate.json": {
+    "mtime": 1783171702.0729222,
+    "ast_hash": "30346c8ae3519044043b2b18218dbaca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_133022_01_L28_S30\\candidate.json": {
+    "mtime": 1783171822.624968,
+    "ast_hash": "30346c8ae3519044043b2b18218dbaca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_134213_01_L28_S30\\candidate.json": {
+    "mtime": 1783172533.4130275,
+    "ast_hash": "30346c8ae3519044043b2b18218dbaca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_135247_01_balanced_60m_1pct\\target_label.json": {
+    "mtime": 1783173167.2946134,
+    "ast_hash": "e24b8469e01d5935655edd569d1ec291",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_135247_02_early_momentum_30m_1pct\\target_label.json": {
+    "mtime": 1783174248.5760474,
+    "ast_hash": "e61401f2e460841b9d270b0b56180a2a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_135247_03_conviction_60m_3pct\\target_label.json": {
+    "mtime": 1783175266.423707,
+    "ast_hash": "19f385da6938ef1de59e7cd2bc4939e1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260704_135247_04_trend_follow_120m_3pct\\target_label.json": {
+    "mtime": 1783176029.209297,
+    "ast_hash": "86495427351255bdb304f2b15aa1f34f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260705_014358_01_balanced_60m_1pct\\target_label.json": {
+    "mtime": 1783215838.7345157,
+    "ast_hash": "eb450f9618f02d96c2bbdeb357dc549f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260705_014358_02_early_momentum_30m_1pct\\target_label.json": {
+    "mtime": 1783216811.9195395,
+    "ast_hash": "aae59012c24a124f452003bd596d4e30",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260705_014358_03_conviction_60m_3pct\\target_label.json": {
+    "mtime": 1783217735.28657,
+    "ast_hash": "94b16e7e8a98c3ff73d386d0da822b26",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\runs\\20260705_014358_04_trend_follow_120m_3pct\\target_label.json": {
+    "mtime": 1783218653.1184,
+    "ast_hash": "fee50921ef0f6f25fbcabc24226a0f22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_120m_3pct_final.txt": {
+    "mtime": 1783219080.8436768,
+    "ast_hash": "c6ab4b1cf069d4f93c0e6f7c3a31cdf0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_30m_1pct_final.txt": {
+    "mtime": 1783217079.285572,
+    "ast_hash": "b6a6ab0bbddbbd1711fb64be94159591",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\lgbm_model_60m_3pct_final.txt": {
+    "mtime": 1783217997.9961023,
+    "ast_hash": "b9dbf11e7bc34c00b0ad8958dc10fad4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\MODEL_CHANNELS.md": {
+    "mtime": 1783265061.6725588,
+    "ast_hash": "ec4e850acb8edf0a45f1dd8238fed51b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_120m_3pct_final.txt": {
+    "mtime": 1783219080.8436768,
+    "ast_hash": "c6ab4b1cf069d4f93c0e6f7c3a31cdf0",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_30m_1pct_final.txt": {
+    "mtime": 1783217079.285572,
+    "ast_hash": "b6a6ab0bbddbbd1711fb64be94159591",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_60m_1pct_final.txt": {
+    "mtime": 1783216153.8103273,
+    "ast_hash": "1be3551ca314f1c8f15667265cca2e22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\auto_research\\releases\\2026-07-05_jul03_refresh\\lgbm_model_60m_3pct_final.txt": {
+    "mtime": 1783217997.9961023,
+    "ast_hash": "b9dbf11e7bc34c00b0ad8958dc10fad4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\live_production\\current\\lgbm_model_60m_1pct_final.txt": {
+    "mtime": 1783216153.8103273,
+    "ast_hash": "1be3551ca314f1c8f15667265cca2e22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\external\\karpathy-autoresearch\\program.md": {
+    "mtime": 1783165981.8486662,
+    "ast_hash": "e32ce31331d3b366636b5a2095e2b030",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\external\\karpathy-autoresearch\\README.md": {
+    "mtime": 1783165981.8446434,
+    "ast_hash": "e3d38a20dabf82b9a86dae77ba502880",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\README.md": {
+    "mtime": 1783172995.7811925,
+    "ast_hash": "c420e6207685bcf16a0f46254797dcc9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\mover_auto_researcher_v1\\reports\\latest_research_plan.md": {
+    "mtime": 1783220110.2259808,
+    "ast_hash": "fefe3215cd3b77c2d76ec1022e76d851",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\research\\external\\karpathy-autoresearch\\progress.png": {
+    "mtime": 1783165981.8532193,
+    "ast_hash": "c7347696ceda69bc5148f8dce2dc7486",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\update_whitelist.py": {
+    "mtime": 1784958078.5029054,
+    "ast_hash": "3379082029cba36f7483e7866ba3fae1",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scratch\\test_cast.py": {
+    "mtime": 1784038535.9529998,
+    "ast_hash": "aef7a9f9e46bcb54595fb5e297640fc5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\alignment_v2.py": {
+    "mtime": 1784955612.3104322,
+    "ast_hash": "f5571bfeed2dfa329299d914fd0837a9",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\feature_factory_v2.py": {
+    "mtime": 1784955794.640596,
+    "ast_hash": "0e32c14553e9cd0f3fa7298bdace0cb4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\_archive\\alignment.py": {
+    "mtime": 1781217051.7832344,
+    "ast_hash": "e2e9a23bc3fe81763c392472d1aa1fa3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\features\\_archive\\feature_factory.py": {
+    "mtime": 1784143336.1428201,
+    "ast_hash": "6010c66ed5fb0bc02f8015288acfab32",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\releases\\2026-07-21_40_dates\\lgbm_model_60m_1pct_final.json": {
+    "mtime": 1784670591.4096608,
+    "ast_hash": "09ffa725869cd532aa6735e6102a46ca",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\10_prepare_data_v2.py": {
+    "mtime": 1784958023.3059752,
+    "ast_hash": "c4a60d3871b575acf9e42a72eff45a7a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\20_infer_trades_v2.py": {
+    "mtime": 1784956075.887086,
+    "ast_hash": "8407cb808864cbfcc9ae810e29e20f51",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\30_compute_features_v2.py": {
+    "mtime": 1784956091.2075264,
+    "ast_hash": "5d48cfd1c98df39b34fc53ac1060433c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\76_generate_v2_sweeps_v2.py": {
+    "mtime": 1784955369.008798,
+    "ast_hash": "302d63afedd29631504a75d673881c85",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\89_test2_model_overlay.py": {
+    "mtime": 1785437607.0620182,
+    "ast_hash": "5e4d63e01fc1e822814310060e96998c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\90_test1_roc_continuation.py": {
+    "mtime": 1785437499.2825394,
+    "ast_hash": "f9fa15afc90651c639fdf789daf56f31",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\91_options_straddle_variance_test.py": {
+    "mtime": 1785436446.8062253,
+    "ast_hash": "e41a5d3d4696789695355664c0054fef",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\92_volatility_matched_control_test.py": {
+    "mtime": 1785434877.9471009,
+    "ast_hash": "2663324a12ee7e1ef5a1a6a2d2c7943a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\93_opening_slot_contention_audit.py": {
+    "mtime": 1785433685.412857,
+    "ast_hash": "1d8005caedb3de9b928c67d6a574311b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\94_random_control_group_excursion.py": {
+    "mtime": 1785433195.1350489,
+    "ast_hash": "dc4dfd1b61d6d4caeb7d4b969a16c6c7",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\95_add_true_ohlc_to_oof.py": {
+    "mtime": 1785432348.5073502,
+    "ast_hash": "17560f4dc1ea57902f69f9f1e63edf51",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\96_mfe_mae_excursion_profile.py": {
+    "mtime": 1785430756.8170373,
+    "ast_hash": "c88f7a9795bc402fad0144db4de5c0fc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\97_decile_tail_breakdown.py": {
+    "mtime": 1785380588.5197058,
+    "ast_hash": "b9f40f927204eab10e1ed001c530f32b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\98_build_true_oof.py": {
+    "mtime": 1785361440.8866227,
+    "ast_hash": "84bcf5446228c38b6f5408539e033a06",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\99_rebuild_oof_all.py": {
+    "mtime": 1784930189.6162982,
+    "ast_hash": "bbc9c9fc813b9a3d324c8bbf5c355033",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\99_rebuild_oof_all_v2.py": {
+    "mtime": 1785352653.3951912,
+    "ast_hash": "4cd27a223dfe87a1cc0543eab4849f6d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\validate_output.py": {
+    "mtime": 1784955328.5858629,
+    "ast_hash": "cac0e1c6c63107579494f20dea2034cd",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\_archive\\10_prepare_data.py": {
+    "mtime": 1781216654.350032,
+    "ast_hash": "9f6fffcfeca8b16755fe39c8a1bcce1d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\_archive\\20_infer_trades.py": {
+    "mtime": 1781216638.7610774,
+    "ast_hash": "8b099b13b0f0821c36c5e146a2c13b2d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\_archive\\30_compute_features.py": {
+    "mtime": 1781216847.3336146,
+    "ast_hash": "07465cf0fe9c0d36da73e33be0e4e0df",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\_archive\\76_generate_v2_sweeps.py": {
+    "mtime": 1784930382.6067057,
+    "ast_hash": "27c26eaddf5f4ed01c08ec44667d094f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\scripts\\_archive\\99_rebuild_oof_all.py": {
+    "mtime": 1784930189.6162982,
+    "ast_hash": "bbc9c9fc813b9a3d324c8bbf5c355033",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\MOHIT\\.gemini\\antigravity\\playground\\ProjectAlpha\\models\\releases\\2026-07-21_40_dates\\lgbm_model_60m_1pct_final.txt": {
+    "mtime": 1784670589.2433126,
+    "ast_hash": "5b38a2758c90f21e96e6f5a0fd197513",
+    "semantic_hash": ""
+  }
+}

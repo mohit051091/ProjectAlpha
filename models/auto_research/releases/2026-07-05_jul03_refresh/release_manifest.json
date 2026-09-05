@@ -1,0 +1,39 @@
+{
+  "release_id": "2026-07-05_jul03_refresh",
+  "channel": "auto_research",
+  "created_utc": "2026-07-05T08:25:10Z",
+  "dataset_coverage": {
+    "start_date": "2026-05-26",
+    "end_date": "2026-07-03",
+    "notes": "DuckDB-first staged completion with Jul-03 included."
+  },
+  "best_recommendation": {
+    "target_label": "label_30m_1pct",
+    "target_alias": "early_momentum_30m_1pct",
+    "pair_label": "L25_S30",
+    "long_th": 0.25,
+    "short_th": 0.3,
+    "score": 0.6139972655710548
+  },
+  "models": [
+    "lgbm_model_30m_1pct_final.txt",
+    "lgbm_model_30m_1pct_final.json",
+    "lgbm_model_60m_1pct_final.txt",
+    "lgbm_model_60m_1pct_final.json",
+    "lgbm_model_60m_3pct_final.txt",
+    "lgbm_model_60m_3pct_final.json",
+    "lgbm_model_120m_3pct_final.txt",
+    "lgbm_model_120m_3pct_final.json"
+  ],
+  "sweep_workbooks": [
+    "../../../../../results/performance_sweeps.xlsx",
+    "../../../../../results/performance_sweeps_label_30m_1pct.xlsx",
+    "../../../../../results/performance_sweeps_label_60m_3pct.xlsx",
+    "../../../../../results/performance_sweeps_label_120m_3pct.xlsx"
+  ],
+  "report_files": [
+    "../../../../../research/mover_auto_researcher_v1/reports/live_recommended_settings.json",
+    "../../../../../research/mover_auto_researcher_v1/reports/latest_result_snapshot.json",
+    "../../../../../research/mover_auto_researcher_v1/proposals/auto_generated_candidates.json"
+  ]
+}
