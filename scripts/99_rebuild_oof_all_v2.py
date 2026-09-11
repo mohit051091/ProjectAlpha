@@ -134,35 +134,52 @@ def main():
         new_files = all_files
         log(f"Total files: {len(new_files)}")
 
-    # Load and prepare new data
-    df_new = load_and_prepare(new_files)
-    if df_new.empty:
-        log("No data loaded. Exiting.")
-        return
+    # Load, prepare + predict one date at a time (chunked: full OOF no longer fits RAM)
+    def date_key(f):
+        stem = f.stem.replace("labeled_features_1m_", "")
+        parts = stem.rsplit("_", 3)
+        return "_".join(parts[-3:]) if len(parts) >= 4 else "_".join(parts[1:])
 
-    # Predict
-    log("Predicting...")
-    X = ensure_features(df_new)
-    preds = model.predict(X)
-    df_new["prob_long"] = preds[:, 0]
-    df_new["prob_short"] = preds[:, 1]
-    df_new["prob_no_trade"] = preds[:, 2]
-
-    # Build output: explicit cols + FEATURES + prediction cols
+    by_date = {}
+    for f in new_files:
+        by_date.setdefault(date_key(f), []).append(f)
+    log(f"Processing {len(by_date)} date(s) in chunks...")
     out_cols = OOF_EXPLICIT_COLS + [c for c in FEATURES if c not in OOF_EXPLICIT_COLS] + \
                ["prob_long", "prob_short", "prob_no_trade"]
-    df_out = df_new[out_cols]
+    chunks = []
+    for d, files in sorted(by_date.items()):
+        df_d = load_and_prepare(files)
+        if df_d.empty:
+            continue
+        log(f"Predicting {d} ({len(df_d):,} rows)...")
+        X = ensure_features(df_d)
+        preds = model.predict(X)
+        df_d["prob_long"] = preds[:, 0]
+        df_d["prob_short"] = preds[:, 1]
+        df_d["prob_no_trade"] = preds[:, 2]
+        chunks.append(df_d[out_cols])
+        del df_d, X, preds
+    if not chunks:
+        log("No data loaded. Exiting.")
+        return
+    df_out = pd.concat(chunks, ignore_index=True)
+    del chunks
 
     # Save
     OOF_PATH.parent.mkdir(parents=True, exist_ok=True)
     if args.incremental and OOF_PATH.exists():
-        df_old = pd.read_parquet(OOF_PATH)
+        import pyarrow.parquet as pq
+        log(f"Reading existing OOF (columns needed only): {OOF_PATH}")
+        df_old = pd.read_parquet(OOF_PATH, columns=list(out_cols))
         log(f"Existing OOF: {len(df_old):,} rows")
         df_all = pd.concat([df_old, df_out], ignore_index=True)
-        df_all = df_all.sort_values(["symbol", "ts"]).reset_index(drop=True)
-        log(f"Appended {len(df_out):,} rows. Total: {len(df_all):,} rows")
+        del df_old, df_out
+        # NOTE: skip global re-sort on incremental append (sort of 7M+ rows spikes RAM;
+        # consumers group/sort per query). Full rebuilds below still sort.
+        log(f"Total: {len(df_all):,} rows")
     else:
         df_all = df_out.sort_values(["symbol", "ts"]).reset_index(drop=True)
+        del df_out
 
     df_all.to_parquet(OOF_PATH, index=False)
     log(f"Saved {len(df_all):,} rows to {OOF_PATH}")
